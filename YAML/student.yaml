@@ -1,0 +1,11 @@
+---
+school:
+  - name: "PDEA college of engineering"
+    principal: "Dr. R. S. Patil"
+    students:
+      - rno: 12
+        name: "Yash Varpe"
+        age: 20
+      - rno: 13
+        name: "Rahul Varpe"
+        age: 22

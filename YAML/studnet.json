@@ -1,0 +1,14 @@
+{
+	"School": {
+		"Name": "ABC",
+		"Principal": "Dr. R. J. Patil",
+		"Students": [
+			{
+				"Name": "John Doe",
+				"Age": 15,
+				"Grade": 10
+			} 
+            
+		]
+	}
+}
