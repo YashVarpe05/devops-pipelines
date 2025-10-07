@@ -1,0 +1,20 @@
+"apple": "I am a red fruit"
+1: "This is Yash"
+---
+# lists
+fruits:
+  - apple
+  - mango
+  - banana
+---
+cities:
+  - pune
+  - delhi
+  - mumbai
+  - nashik
+---
+cities: [newDelhi, mumbai, pune, nashik]
+---
+{ mango: "yellow fruit", taste: "sweet fruit" }
+---
+# this is the used to end the document {...}

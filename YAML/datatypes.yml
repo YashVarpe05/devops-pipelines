@@ -1,0 +1,117 @@
+name: Yash Varpe
+fruit: "Mango"
+
+bio: |
+  hey my name is Yash Varpe 
+  and this | is used to write multi line string
+
+message: >
+  hey my name is Yash Varpe 
+  and this all contained in single line string
+
+Number: 1234
+marks: 98.6
+booleanValue: true
+
+# we can specify the type of data
+zero: !!int 0
+positiveInt: !!int 1234
+negativeInt: !!int -1234
+floatValue: !!float 12.34
+binary: !!binary "SGVsbG8gSmFzaCBWYXJwZQ=="
+octal: !!int 0247
+hexa: !!int 0x1A
+
+# commavalue: !!float 1,234.56
+not a num: .NaN
+infinity: .inf
+neginfinity: -.inf
+
+# null value
+nullValue: null
+emptyValue:
+emptyValue2:
+exponential number: !!float 6.03232
+
+# scientific value
+~: this is a null key
+
+#dates and times
+date: !!timestamp 2024-06-15
+time: 14:30:00
+
+#Advanced Data types YAML
+
+Brands: !!seq
+  - samsung
+  - apple
+  - oneplus
+  - xiomi
+
+sparse seq:
+  - hey
+  - how
+  -
+  - null
+# key: Value pairs are called maps
+
+# samsung: !!map
+
+# nested mappings: map within an map
+
+name1: Yash Varpe
+role:
+  age: 20
+  job: developer
+
+# pairs: keys may have duplicate values
+
+pair example: !!pairs
+  - job: student
+  - job: teacher
+
+#this will be an array of hashtables
+
+# !!set will allow you to have unique values
+
+names: !!set
+  ? Yash
+  ? Rahul
+  ? Om
+
+# dictionary !!omap
+people: !!omap
+  - yash:
+      name: Yash Varpe
+      age: 20
+      height: 180cm
+  - rahul:
+      name: Rahul Varpe
+      age: 22
+      height: 175cm
+  - om:
+      name: Om Varpe
+      age: 25
+      height: 170cm
+
+#reusing some properties using anchors (&) and aliases (*)
+
+likings: &likings
+  fav fruit: mango
+  fav color: blue
+
+person1:
+  name: Yash Varpe
+  age: 2024-06-15
+  <<: *likings
+
+person2:
+  name: OM
+  age: 25
+  <<: *likings
+
+person3:
+  name: rahul
+  age: 22
+  fav color: red
+  <<: *likings
