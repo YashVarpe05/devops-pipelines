@@ -4,11 +4,10 @@
 		"Principal": "Dr. R. J. Patil",
 		"Students": [
 			{
-				"Name": "John Doe",
+				"Name": "Yash varpe",
 				"Age": 15,
 				"Grade": 10
-			} 
-            
+			}
 		]
 	}
 }
